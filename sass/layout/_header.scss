@@ -1,0 +1,28 @@
+.header{
+
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgba($color-primary, 0.4);
+
+    &__text{
+        width: 100%;
+        color: $color-white;
+        text-align: center;
+        transition: all .2s;
+
+        &--up{
+            @include respond-font($font-size-medium);
+            position: absolute;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &--center{
+            @include respond-font($font-size-large);
+            @include CentralizeXY();
+        }
+        
+    }
+}

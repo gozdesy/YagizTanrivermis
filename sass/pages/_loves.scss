@@ -1,0 +1,48 @@
+.loves{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__item{
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        clear: both;
+        transition: all .2s;
+
+        &--1{
+            top: 0;
+            left: 10%;
+            z-index: 8500;
+            @include respond(tab-port){
+                left:2%;
+            }
+        }
+
+        &--2{
+            top: 18rem;
+            left: 50rem;
+
+            @include respond(tab-port){
+                top: 24rem;
+                left: 2%;
+            }
+        }
+
+        &__text{
+            padding: 6rem;
+            text-align: center;
+            @include respond-font($font-size-medium);
+            color: $color-secondary;
+
+            @include respond(tab-port){
+                padding: 2rem;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.2);
+            z-index: 9999;
+        }
+    }
+}

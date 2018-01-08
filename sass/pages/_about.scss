@@ -1,0 +1,55 @@
+.about{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 6rem;
+
+    &__picture{
+        position: absolute;
+        top: 0;
+        left: 14%;
+        width: 36rem;
+        height: 48rem;
+        background-image: url(../img/img-001.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        border-radius: 4rem;
+        opacity: .8;    
+    }
+
+    &__text{
+        position: absolute;
+        top: 4rem;
+        left: 40%;
+        width: 60rem;
+        height: 40rem;
+        background-color: $color-white;
+        border-radius: 4rem;
+        padding: 4rem;  
+    }
+
+    &__paragraph{
+        &:link, &:visited{
+            display: block;
+            @include respond-font($font-size-small);
+            text-align: center;
+            color: $color-black;
+            text-decoration: none;
+            transition: all .2s;
+
+            &:not(:last-child){
+                margin-bottom: 6rem;
+            }
+        }
+        
+        &:hover, &:active{                
+            border-bottom: 3px solid $color-secondary;
+            transform: scale(1.1);
+        }
+
+        &__year{
+            color: $color-secondary;
+        }
+    }
+}

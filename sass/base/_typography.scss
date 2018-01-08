@@ -1,0 +1,17 @@
+body{
+    font-family: $font-family-primary;
+}
+
+.heading-tertiary{
+    @include respond-font($font-size-medium);
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heading-quaternary{
+    @include respond-font($font-size-small);
+    color: $color-secondary;
+    text-align: center;
+    margin-bottom: 6rem;
+}
