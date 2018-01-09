@@ -1,15 +1,15 @@
 .about{
-    width: 100%;
+    width: 80%;
     height: 100%;
     position: relative;
-    padding: 6rem;
+    margin: auto;
 
     &__picture{
         position: absolute;
         top: 0;
-        left: 14%;
-        width: 36rem;
-        height: 48rem;
+        left: 0;
+        width: 40%;
+        height: 80%;
         background-image: url(../img/img-001.jpg);
         background-repeat: no-repeat;
         background-position: top;
@@ -20,10 +20,10 @@
 
     &__text{
         position: absolute;
-        top: 4rem;
-        left: 40%;
-        width: 60rem;
-        height: 40rem;
+        top: 5%;
+        left: 36%;
+        width: 64%;
+        height: 70%;
         background-color: $color-white;
         border-radius: 4rem;
         padding: 4rem;  

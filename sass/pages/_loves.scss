@@ -2,13 +2,15 @@
     width: 100%;
     height: 100%;
     position: relative;
+    margin: auto;
 
     &__item{
         position: absolute;
-        width: 100%;
+        width: 96%;
         height: 25%;
         clear: both;
         transition: all .2s;
+        margin: auto;
 
         &--1{
             top: 0;
