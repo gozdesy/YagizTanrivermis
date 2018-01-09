@@ -31,6 +31,9 @@ body {
     body {
       overflow: auto; } }
 
+::selection {
+  background-color: #D2ECF9; }
+
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }
 
@@ -1224,7 +1227,7 @@ body {
       overflow: auto; } }
   .page-manager__nav {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 9999;
     backface-visibility: hidden;
@@ -1423,3 +1426,25 @@ body {
     .loves__item:hover {
       transform: scale(1.2);
       z-index: 9999; }
+
+.does {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  margin: auto; }
+  .does__svg {
+    margin-bottom: 4rem; }
+    .does__svg__path {
+      fill: transparent; }
+    .does__svg__text {
+      fill: #00dffc;
+      font-size: 2.4rem; }
+      @media only screen and (max-width: 75em) {
+        .does__svg__text {
+          font-size: 2.304rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .does__svg__text {
+          font-size: 2.16rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .does__svg__text {
+          font-size: 2.016rem; } }
