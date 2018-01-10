@@ -3,6 +3,9 @@
     height: 100%;
     position: relative;
     margin: auto;
+    @include respond(phone){
+        width: 90%;
+    }
 
     &__picture{
         position: absolute;
@@ -16,6 +19,19 @@
         background-size: cover;
         border-radius: 4rem;
         opacity: .8;    
+       
+        @include respond(tab-port){
+            width: 50%;
+            height: 50%;
+        }
+        @include respond(phone){
+            width: 90%;
+            height: 50%;
+        }
+        @include respond(height){
+            width: 90%;
+            height: 90%;
+        }
     }
 
     &__text{
@@ -26,7 +42,27 @@
         height: 70%;
         background-color: $color-white;
         border-radius: 4rem;
-        padding: 4rem;  
+        padding: 4rem; 
+        
+        @include respond(tab-port){
+            top: 25%;
+            left: 45%;
+            height: 50%;
+        }
+        @include respond(phone){
+            top: 36%;
+            left: 10%;
+            width: 90%;
+            height: 50%;
+        }
+        @include respond(height){
+            top: 30%;
+            left: 45%;
+            width: 60%;
+            height: 60%;
+            opacity: .7;
+            padding: 3rem 1.5rem;
+        }
     }
 
     &__paragraph{

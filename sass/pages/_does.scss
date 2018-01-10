@@ -1,5 +1,5 @@
 .does{
-    width: 80%;
+    width: 100%;
     height: 100%;
     position: relative;
     margin: auto;
@@ -11,10 +11,8 @@
         }
         
         &__text{
-            //fill: #FF9800;
             fill: $color-secondary;
             @include respond-font(2.4rem);
-            //font-size: 2.4rem;
         }
     }
 }

@@ -34,6 +34,8 @@
 $max-width-phone: 37.5em;  //600px/16
 $max-width-tab-port: 56.25em;  //900px/16
 $max-width-tab-land: 75em;  //1200px/16
+
+$max-height: 37.5em;  //600px/16
 //------------------------------------------
 
 @mixin respond($breakpoint){
@@ -49,6 +51,11 @@ $max-width-tab-land: 75em;  //1200px/16
     }
     @if $breakpoint == phone{
         @media only screen and (max-width:$max-width-phone){
+            @content
+        };
+    }
+    @if $breakpoint == height{
+        @media only screen and (max-height:$max-height){
             @content
         };
     }
