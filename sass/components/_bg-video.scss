@@ -7,6 +7,9 @@
     overflow: hidden;
     z-index: -1;
     opacity: .45;
+    background-image: url(../img/img-007.jpg);
+    background-position: center;
+    background-size: cover;
 
     &__content{
         width: 100%;
