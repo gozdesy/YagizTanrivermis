@@ -1,53 +1,78 @@
 .loves{
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: relative;
     margin: auto;
-    background-image: url(../img/img-005.jpg), url(../img/img-007.jpg);
-    background-size: 40%, 40%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: left, right;
-
+    
     &__item{
         position: absolute;
-        width: 96%; 
-        height: 25%;
-        clear: both;
+        width: 50%;
+        height: 70%;
         transition: all .2s;
         margin: auto;
+        border: 2rem solid $color-primary-light;
+        border-radius: 4px;
+        box-shadow: 1rem 1rem 1rem rgba($color-primary-light, .5);   
+
+        &__text{
+            position: relative;
+            float: left;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            color: $color-black;
+            font-family: $font-family-secondary;
+            @include respond-font($font-size-medium);
+            background-image: radial-gradient($color-primary-light, $color-primary);
+            letter-spacing: 1rem;
+            &__content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-90deg);
+            }
+        }
+
+        &__picture{
+            float: left;
+            width: 80%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 1rem 1rem 1rem rgba($color-black, .5);
+            &--1{
+                background-image: url(../img/img-003.jpg);
+            }
+            &--2{
+                background-image: url(../img/img-002.jpg);
+            }
+        }
 
         &--1{
-            top: 0;
-            left: 10%;
+            top: 2%;
+            left: 15%;
             z-index: 8500;
-            @include respond(tab-port){
-                left:2%;
-            }
+            transform: skewY(-5deg);
         }
 
         &--2{
-            top: 18rem;
-            left: 50rem;
-
-            @include respond(tab-port){
-                top: 24rem;
-                left: 2%;
-            }
-        }
-
-        &__text{
-            padding: 6rem;
-            text-align: center;
-            @include respond-font($font-size-medium);
-            color: $color-secondary;
-
-            @include respond(tab-port){
-                padding: 2rem;
-            }
+            bottom: 2%;
+            right: 15%;
+            z-index: 8600;
+            transform: skewY(-5deg);
+        } 
+        
+        @include respond(tab-port){
+            width: 80%;
+            height: 50%;
+            position: static;
+            transform: skewY(0);
+            margin: 1rem auto;
         }
 
         &:hover{
-            transform: scale(1.2);
+            transform: translateY(-5rem) scale(1.2);
             z-index: 9999;
         }
     }
