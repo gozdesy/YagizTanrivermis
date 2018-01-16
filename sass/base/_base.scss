@@ -12,11 +12,9 @@ html{
         font-size: 60%;     //1200/16
     }
     @include respond(tab-port){
-        //font-size: 56.25%;  //900/16
         font-size: 55%;  //900/16
     }
     @include respond(phone){
-        //font-size: 37.5%;   //600/16
         font-size: 50%;  //900/16
     }
 }
@@ -27,12 +25,11 @@ body{
     position: relative;
     overflow: hidden;
     
-    @include respond(tab-port){
-        overflow: auto;
-    }
+    // @include respond(height){
+    //     overflow: auto;
+    // }
 }
 
 ::selection{
-    //color: 
     background-color: #D2ECF9;
 }

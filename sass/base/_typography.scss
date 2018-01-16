@@ -7,6 +7,9 @@ body{
     color: $color-white;
     text-align: center;
     margin-bottom: 4rem;
+    @include respond(tab-port){
+        margin-bottom: 2rem;
+    }
 }
 
 .heading-quaternary{
@@ -14,4 +17,7 @@ body{
     color: $color-secondary;
     text-align: center;
     margin-bottom: 6rem;
+    @include respond(tab-port){
+        margin-bottom: 3rem;
+    }
 }

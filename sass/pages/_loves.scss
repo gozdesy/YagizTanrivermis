@@ -3,10 +3,14 @@
     height: 100%;
     position: relative;
     margin: auto;
+    background-image: url(../img/img-005.jpg), url(../img/img-007.jpg);
+    background-size: 40%, 40%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
 
     &__item{
         position: absolute;
-        width: 96%;
+        width: 96%; 
         height: 25%;
         clear: both;
         transition: all .2s;

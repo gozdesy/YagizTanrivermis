@@ -5,3 +5,7 @@
 .u-font-medium{
     font-size: $font-size-medium;
 }
+
+.u-centralizexy{
+    @include CentralizeXY();
+}
