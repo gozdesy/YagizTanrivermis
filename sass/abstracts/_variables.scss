@@ -6,29 +6,16 @@ $color-black: #000;
 $color-text-light: $color-white;
 $color-text-dark: $color-black;
 
-// $color-primary-light-1:  #BDBDBD;
-// $color-primary-light-2:  #F5F5F5;
-
-// $color-primary-dark:   #616161;
-// $color-primary:        #9E9E9E;
-// $color-secondary:   #FFA000;
-
-// $color-primary-light:#BDBDBD;
-// $color-primary: #008c9e;
-// $color-primary-dark: #005f6b;
-// $color-secondary: #00dffc;
-
 $color-primary-light: #D2ECF9;
-//$color-secondary: #1891AC;
 $color-secondary: #00dffc;
 $color-primary: #1F5F8B;
 $color-primary-dark: #253B6E;
 
 //grid
 //-----------------------------------
-$gutter-horizontal: 6rem;
-$gutter-vertical: 6rem;
-$gutter-vertical-small: 4rem;
+$gutter-horizontal: 4rem;
+$gutter-vertical: 4.5rem;
+$gutter-vertical-small: 3rem;
 
 //fonts
 //------------------------------------

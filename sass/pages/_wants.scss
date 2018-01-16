@@ -1,0 +1,36 @@
+.wants{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    margin: auto;
+    
+    &__svg{ 
+        height: 30rem;
+        position: relative;
+        display: block;
+        margin-bottom: 4rem;   
+        //border-radius: 4px;
+        //box-shadow: -1rem -1rem 1rem rgba($color-primary-light, .5);  
+        -webkit-clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+        clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+        background-image: radial-gradient($color-primary-dark, $color-primary-light);
+
+        &__text{
+            position: absolute; 
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            margin: auto;
+            //margin-top: -6rem;
+            color: $color-black;
+            background-color: $color-white;
+            //box-shadow: 2rem 2rem 1rem rgba($color-black, .5);
+            padding: 1rem;
+            //border-radius: 1000rem;
+            @include respond-font(1.6rem);
+            text-align: center;
+        }
+    }
+
+    
+}

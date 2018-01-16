@@ -1202,10 +1202,10 @@ body {
   max-width: 168rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 6rem; }
+    margin-bottom: 4.5rem; }
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 4rem; } }
+        margin-bottom: 3rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 54rem; } }
@@ -1216,30 +1216,30 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 4rem; }
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important;
         margin-right: 0; }
         .row [class^="col-"]:not(:last-child) {
-          margin-bottom: 4rem; } }
+          margin-bottom: 3rem; } }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem)/2); }
+    width: calc((100% - 4rem)/2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem)/3); }
+    width: calc((100% - 2 * 4rem)/3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem)/3) + 6rem); }
+    width: calc(2 * ((100% - 2 * 4rem)/3) + 4rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem)/4); }
+    width: calc((100% - 3 * 4rem)/4); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem)/4) + 2 * 6rem); }
+    width: calc(3 * ((100% - 3 * 4rem)/4) + 2 * 4rem); }
   .row .col-1-of-4-respond {
-    width: calc((100% - 3 * 6rem)/4); }
+    width: calc((100% - 3 * 4rem)/4); }
     @media only screen and (max-width: 56.25em) {
       .row .col-1-of-4-respond {
         display: none; } }
   .row .col-3-of-4-respond {
-    width: calc(3 * ((100% - 3 * 6rem)/4) + 2 * 6rem); }
+    width: calc(3 * ((100% - 3 * 4rem)/4) + 2 * 4rem); }
     @media only screen and (max-width: 56.25em) {
       .row .col-3-of-4-respond {
         width: 100%; } }
@@ -1285,10 +1285,6 @@ body {
     padding: 4rem 2rem;
     background-color: #253B6E;
     transition: all .8s; }
-    @media only screen and (max-height: 37.5em) {
-      .page-manager__page {
-        min-height: 80rem;
-        padding: 1rem 1rem; } }
     .page-manager__page:target {
       opacity: 1;
       transform: translate3d(0, 0, 0);
@@ -1310,6 +1306,16 @@ body {
       @media only screen and (max-width: 37.5em) {
         .page-manager__page__close {
           font-size: 5.04rem; } }
+  @media only screen and (max-height: 37.5em) {
+    .page-manager #page2 {
+      min-height: 80rem;
+      padding: 1rem 1rem; } }
+  @media only screen and (max-height: 37.5em) {
+    .page-manager #page3 {
+      min-height: 200rem; } }
+  @media only screen and (max-height: 37.5em) {
+    .page-manager #page4 {
+      min-height: 120rem; } }
 
 .clip {
   float: left;
@@ -1464,7 +1470,7 @@ body {
     color: #00dffc; }
 
 .loves {
-  width: 100%;
+  width: 90%;
   height: 90%;
   position: relative;
   margin: auto; }
@@ -1536,17 +1542,30 @@ body {
       z-index: 9999; }
 
 .does {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 85%;
   position: relative;
   margin: auto; }
   .does__svg {
-    margin-bottom: 4rem; }
-    .does__svg__path {
-      fill: transparent; }
+    position: relative;
+    display: block;
+    margin-bottom: 4rem;
+    border: 2rem solid #D2ECF9;
+    border-radius: 4px;
+    box-shadow: 1rem 1rem 1rem rgba(210, 236, 249, 0.5); }
     .does__svg__text {
-      fill: #00dffc;
-      font-size: 2.4rem; }
+      position: absolute;
+      top: 70%;
+      left: 0;
+      color: #000;
+      background-color: #fff;
+      box-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      margin-left: -4rem;
+      border-radius: 4rem;
+      font-size: 2.4rem;
+      transform: rotate(-45deg);
+      transform-origin: 0 0 0; }
       @media only screen and (max-width: 75em) {
         .does__svg__text {
           font-size: 2.304rem; } }
@@ -1556,3 +1575,69 @@ body {
       @media only screen and (max-width: 37.5em) {
         .does__svg__text {
           font-size: 2.016rem; } }
+
+.wants {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  margin: auto; }
+  .wants__svg {
+    height: 30rem;
+    position: relative;
+    display: block;
+    margin-bottom: 4rem;
+    -webkit-clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+    background-image: radial-gradient(#253B6E, #D2ECF9); }
+    .wants__svg__text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin: auto;
+      color: #000;
+      background-color: #fff;
+      padding: 1rem;
+      font-size: 1.6rem;
+      text-align: center; }
+      @media only screen and (max-width: 75em) {
+        .wants__svg__text {
+          font-size: 1.536rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .wants__svg__text {
+          font-size: 1.44rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .wants__svg__text {
+          font-size: 1.344rem; } }
+
+.contact {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto; }
+  .contact__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
+    .contact__content__link:link, .contact__content__link:active {
+      display: inline-block;
+      font-size: 3rem;
+      text-decoration: none;
+      color: #fff;
+      transition: all .2s; }
+      @media only screen and (max-width: 75em) {
+        .contact__content__link:link, .contact__content__link:active {
+          font-size: 2.88rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .contact__content__link:link, .contact__content__link:active {
+          font-size: 2.7rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact__content__link:link, .contact__content__link:active {
+          font-size: 2.52rem; } }
+    .contact__content__link:hover {
+      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5); }
+    .contact__content svg {
+      display: inline-block; }

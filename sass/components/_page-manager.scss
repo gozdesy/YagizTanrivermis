@@ -24,11 +24,6 @@
         background-color: $color-primary-dark;
         transition: all .8s;    
 
-        @include respond(height){
-            min-height: 80rem;
-            padding: 1rem 1rem;
-        }
-
         &:target{
             opacity: 1;
             transform: translate3d(0, 0, 0);
@@ -43,6 +38,22 @@
             text-decoration: none;
             color: $color-white;
             z-index: 9999;
+        }
+    }
+    #page2{
+        @include respond(height){
+            min-height: 80rem;
+            padding: 1rem 1rem;
+        }
+    }
+    #page3{
+        @include respond(height){
+            min-height: 200rem;
+        }
+    }
+    #page4{
+        @include respond(height){
+            min-height: 120rem;
         }
     }
 }
