@@ -1280,12 +1280,12 @@ body {
     text-align: center;
     width: 100%;
     height: 94vh;
-    min-height: 80rem;
     padding: 4rem 2rem;
     background-color: #253B6E;
     transition: all .8s; }
     @media only screen and (max-height: 37.5em) {
       .page-manager__page {
+        min-height: 80rem;
         padding: 1rem 1rem; } }
     .page-manager__page:target {
       opacity: 1;
