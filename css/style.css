@@ -1367,7 +1367,7 @@ body {
   box-shadow: 1rem 1rem 1rem rgba(210, 236, 249, 0.5); }
   @media only screen and (max-height: 37.5em) {
     .about {
-      height: 80rem; } }
+      height: 64rem; } }
   .about__picture {
     width: calc(100% / 3);
     height: 100%;
@@ -1539,7 +1539,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .loves__item {
         width: 80%;
-        height: 50%;
+        height: 30%;
         position: static;
         transform: skewY(0);
         margin: 1rem auto; } }

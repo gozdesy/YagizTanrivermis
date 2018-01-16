@@ -13,7 +13,7 @@ $margin-left : .5%;
     box-shadow: 1rem 1rem 1rem rgba($color-primary-light, .5);
 
     @include respond(height){
-        height: 80rem;
+        height: 64rem;
     }
 
     &__picture{
