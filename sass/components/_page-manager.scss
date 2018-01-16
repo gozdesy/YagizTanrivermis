@@ -40,6 +40,13 @@
             z-index: 9999;
         }
     }
+
+    #page1{
+        @include respond(height){
+            min-height: 100rem;
+        }
+    }
+
     #page2{
         @include respond(height){
             min-height: 80rem;

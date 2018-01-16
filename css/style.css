@@ -1307,6 +1307,9 @@ body {
         .page-manager__page__close {
           font-size: 5.04rem; } }
   @media only screen and (max-height: 37.5em) {
+    .page-manager #page1 {
+      min-height: 100rem; } }
+  @media only screen and (max-height: 37.5em) {
     .page-manager #page2 {
       min-height: 80rem;
       padding: 1rem 1rem; } }
@@ -1362,6 +1365,9 @@ body {
   border: 2rem solid #D2ECF9;
   border-radius: 4px;
   box-shadow: 1rem 1rem 1rem rgba(210, 236, 249, 0.5); }
+  @media only screen and (max-height: 37.5em) {
+    .about {
+      height: 80rem; } }
   .about__picture {
     width: calc(100% / 3);
     height: 100%;
