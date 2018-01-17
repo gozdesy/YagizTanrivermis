@@ -71,9 +71,17 @@
             margin: 1rem auto;
         }
 
-        &:hover{
-            transform: translateY(-5rem) scale(1.2);
-            z-index: 9999;
+        &--1{
+            &:hover{
+                transform: translateY(5rem) scale(1.2);
+                z-index: 9999;
+            }
+        }
+        &--2{
+            &:hover{
+                transform: translateY(-5rem) scale(1.2);
+                z-index: 9999;
+            }
         }
     }
 }
